@@ -31,10 +31,10 @@ namespace FrameworkHW2_SwagLabs.Tests
         public void TC01_Login_With_Valid_Credentials()
         {
             lp = new LoginPage(driver);
-            lp.Login("standard_user", "secret_sauceee");
-            //lp.Login("standard_user", "secret_sauce");
+            //lp.Login("standard_user", "secret_sauceee");
+            lp.Login("standard_user", "secret_sauce");
             //AllureLifecycle.Instance.AddAttachment("Full page screenshot", MediaTypeNames.Image.Jpeg, ((ITakesScreenshot)driver).GetScreenshot().AsByteArray);
-            
+
             pp = new ProductsPage(driver);
             Assert.That(pp.IsPageDisplayed(pp.ProductsLabelEl), "Login Failed with entered credentials");
             
