@@ -1,0 +1,41 @@
+{
+  "loginPage": {
+    "elements_css": {
+      "user_name": "#user-name",
+      "pswd": "#password",
+      "LoginBtn": "#login-button",
+      "ErrMsgLabel": "[data-test='error']"
+    },
+    "labels_text": {
+      "invalid_credentials_err_msg": "Epic sadface: Username and password do not match any user in this service aaa"
+    }
+  },
+  "AllPagesTopLayer": {
+    "elements_css": {
+      "OptionsMenuBtn": "#react-burger-menu-btn",
+      "OptionsMenuContainerEl": ".bm-menu-wrap",
+      "OptionsElList": ".bm-item-list>a",
+      "ShopingCartNumEl": ".shopping_cart_badge",
+      "ShopingCartLink": ".shopping_cart_link",
+      "LogoutOption": "#logout_sidebar_link"
+    }
+  },
+  "ProductsPage": {
+    "elements_css": {
+      "ProductsLabelEl": ".title",
+      "ProductsNameElList": ".inventory_item_name",
+      "ProductsDescriptionElList": ".inventory_item_desc",
+      "ProductsPriceElList": ".inventory_item_price",
+      "ProductsAddRemoveBtnList": ".btn"
+    }
+  },
+  "SelectedProductPage": {
+    "elements_css": {
+      "BackBtn": "#back-to-products",
+      "ProdName": ".inventory_details_name",
+      "ProdDesc": ".inventory_details_desc",
+      "ProdPrice": ".inventory_details_price",
+      "ProdAddRmvBtn": ".inventory_details_desc_container>.btn"
+    }
+  }
+}

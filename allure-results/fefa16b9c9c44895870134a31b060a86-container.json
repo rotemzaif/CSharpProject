@@ -1,0 +1,46 @@
+{
+  "uuid": "80db8ca9-ae39-4b10-bd0c-8738cc137100-tc-0-1000",
+  "name": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC01_Login_With_Valid_Credentials",
+  "children": [
+    "11a4a34c-a746-4044-91f2-53c38fe7456b-tr-0-1001"
+  ],
+  "befores": [
+    {
+      "name": "Setup",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1650261498440,
+      "stop": 1650261498440
+    }
+  ],
+  "afters": [
+    {
+      "name": "Teardown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1650261498440,
+      "stop": 1650261498440
+    }
+  ],
+  "links": [],
+  "start": 1650261498149,
+  "stop": 1650261498461
+}
