@@ -24,6 +24,7 @@ namespace FrameworkHW2_SwagLabs.Tests
     {
         LoginPage lp;
         ProductsPage pp;
+        string ExpectedUrl;
 
         [Test, Description("login to the app with valid credentials")]
         [AllureSeverity(SeverityLevel.blocker)]
@@ -33,11 +34,10 @@ namespace FrameworkHW2_SwagLabs.Tests
             lp = new(Driver);
             lp.Login("standard_user", "secret_sauceee");
             //lp.Login("standard_user", "secret_sauce");                       
-            Assert.That(!lp.IsPageDisplayed(lp.ErrMsgLabel), "Login Failed with entered credentials!! Check user-name and password entered");
+            Assert.That(!lp.IsErrMsgDisplayed(), "Login Failed with entered credentials!! Check user-name and password entered");
             pp = new(Driver);
-            Assert.That(pp.IsPageDisplayed(pp.ProductsLabelEl), "Products page is not displayed");
-            
-
+            ExpectedUrl = Utils.pageElements["ProductsPage:ProductsPageURL"];
+            Assert.That(Driver.Url, Is.EqualTo(ExpectedUrl),"Products page is not displayed");           
         }
 
         [Test, Description("ordered logout from the app - via logout button")]
@@ -45,35 +45,35 @@ namespace FrameworkHW2_SwagLabs.Tests
         [AllureFeature("logout")]
         public void TC02_Logout()
         {
-            pp = new ProductsPage(Driver);
+            pp = new(Driver);
             pp.OpenOptionsMenu();
             pp.SelectAction(MenuOption.LOGOUT);
-            lp = new LoginPage(Driver);
-            Assert.That(lp.IsPageDisplayed(lp.LoginBtn));
+            ExpectedUrl = Utils.pageElements["loginPage:LoginPageURL"];
+            Assert.That(Driver.Url, Is.EqualTo(ExpectedUrl), "Login page is not displayed, Logout action failed");
         }
 
-        //[Test, Description("app login with invalid credentials and get an error message")]
-        //[AllureSeverity(SeverityLevel.critical)]
-        //[AllureFeature("login")]
-        //public void TC03_Login_With_Invalid_Credentials()
-        //{
-        //    LoginPage lp = new LoginPage(driver);
-        //    lp.Login("rotem", "123456789");
-        //    Assert.That(lp.IsErrMsgDisplayed(), "Error message is not displayed when entering invalid credentials");
-        //    //string expectedErrMsg = Utils.pageElements["loginPage:labels_text:invalid_credentials_err_msg"];
-        //    //Console.WriteLine("actual err msg: " + lp.GetErrMsgText());
-        //    //Assert.That(lp.GetErrMsgText(), Is.EqualTo(expectedErrMsg));
-        //}
+        [Test, Description("app login with invalid credentials and get an error message")]
+        [AllureSeverity(SeverityLevel.critical)]
+        [AllureFeature("login")]
+        public void TC03_Login_With_Invalid_Credentials()
+        {
+            lp = new(Driver);
+            lp.Login("rotem", "123456789");
+            Assert.That(lp.IsErrMsgDisplayed(), "Error message is not displayed when entering invalid credentials");
+            //string expectedErrMsg = Utils.pageElements["loginPage:labels_text:invalid_credentials_err_msg"];
+            //Console.WriteLine("actual err msg: " + lp.GetErrMsgText());
+            //Assert.That(lp.GetErrMsgText(), Is.EqualTo(expectedErrMsg));
+        }
 
-        //[Test, Description("check error message content")]
-        //[AllureSeverity(SeverityLevel.minor)]
-        //[AllureFeature("login")]
-        //public void TC04_check_error_message()
-        //{
-        //    LoginPage lp = new LoginPage(driver);
-        //    string expectedErrMsg = Utils.pageElements["loginPage:labels_text:invalid_credentials_err_msg"];
-        //    Assert.That(lp.GetErrMsgText(), Is.EqualTo(expectedErrMsg));
-        //}
+        [Test, Description("check error message content")]
+        [AllureSeverity(SeverityLevel.minor)]
+        [AllureFeature("login")]
+        public void TC04_check_error_message()
+        {
+            lp = new(Driver);
+            string expectedErrMsg = Utils.pageElements["loginPage:labels_text:invalid_credentials_err_msg"];
+            Assert.That(lp.GetErrMsgText(), Is.EqualTo(expectedErrMsg));
+        }
 
 
     }
