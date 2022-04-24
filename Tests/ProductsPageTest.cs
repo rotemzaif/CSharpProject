@@ -22,13 +22,13 @@ namespace FrameworkHW2_SwagLabs.Tests
         [AllureFeature("Add Product")]
         public void TC01_Add_Products_To_Cart()
         {
-            LoginPage lp = new LoginPage(driver);
+            LoginPage lp = new LoginPage(Driver);
             lp.Login("standard_user", "secret_sauce");
-            pp = new ProductsPage(driver);            
+            pp = new ProductsPage(Driver);            
             prodName = "Sauce Labs Backpack";
             int numOfProductsInCartBeforeAdd = pp.GetNumOfProductsDisplay();
             pp.AddProduct(prodName);
-            pp = new ProductsPage(driver);
+            pp = new ProductsPage(Driver);
             IWebElement prodBtn = pp.ProductsDict[prodName][3];            
             Assert.AreEqual(ButtonState.REMOVE, pp.GetButtonSate(prodBtn),"Button did not toggle to 'Remove' after adding a product");
             Assert.AreEqual(pp.GetNumOfProductsDisplay(), numOfProductsInCartBeforeAdd + 1,"shoping cart products num display is not updated");
@@ -39,14 +39,14 @@ namespace FrameworkHW2_SwagLabs.Tests
         [AllureFeature("Remove Product")]
         public void tc02_Remove_Product_From_Cart()
         {
-            pp = new ProductsPage(driver);
+            pp = new ProductsPage(Driver);
             int numOfProductsInCartBeforeRemove = pp.GetNumOfProductsDisplay();
             if(numOfProductsInCartBeforeRemove == 0)
                 Console.WriteLine("no products were added!! Cannot remove any product");
             else
             {
                 pp.RemoveProduct(prodName);
-                pp = new ProductsPage(driver);
+                pp = new ProductsPage(Driver);
                 IWebElement prodBtn = pp.ProductsDict[prodName][3];
                 Assert.AreEqual(ButtonState.ADD, pp.GetButtonSate(prodBtn), "Button did not toggle to 'ADD TO CART' after adding a product");
                 Assert.AreEqual(pp.GetNumOfProductsDisplay(), numOfProductsInCartBeforeRemove - 1, 
@@ -59,9 +59,9 @@ namespace FrameworkHW2_SwagLabs.Tests
         [AllureFeature("View Product")]
         public void TC03_Move_To_Product_Page()
         {
-            pp = new ProductsPage(driver);
+            pp = new ProductsPage(Driver);
             pp.GoToProductPage(prodName);
-            SelectedProductPage spp = new SelectedProductPage(driver);
+            SelectedProductPage spp = new SelectedProductPage(Driver);
             Assert.That(spp.IsPageDisplayed(spp.BackBtn));
         }
 

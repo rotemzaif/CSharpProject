@@ -23,9 +23,9 @@ namespace FrameworkHW2_SwagLabs.Tests
         [Test, Description("move to selected product page and verify product details match the selected product details")]
         public void TC01_Check_Product_Details()
         {
-            lp = new LoginPage(driver);
+            lp = new LoginPage(Driver);
             lp.Login("standard_user", "secret_sauce");
-            pp = new ProductsPage(driver);
+            pp = new ProductsPage(Driver);
             Assert.That(pp.IsPageDisplayed(pp.ProductsLabelEl), "Login Failed with entered credentials");
             // getting a random product from the list
             Random rnd = new Random();
@@ -33,7 +33,7 @@ namespace FrameworkHW2_SwagLabs.Tests
             SelectedProd = pp.GetProuct(SelectedProdIndex);
             Console.WriteLine(SelectedProd.ToString());
             pp.GoToProductPage(SelectedProd.name);
-            spp = new SelectedProductPage(driver);
+            spp = new SelectedProductPage(Driver);
             Assert.That(pp.IsPageDisplayed(spp.BackBtn), "Did not reach the product page!!");
             Assert.AreEqual(SelectedProd.name, spp.GetProductName(), "displayed product name doesn't match the selected product name");
             Assert.AreEqual(SelectedProd.description, spp.GetProductDescription(), "displayed product description doesn't match the selected product description");
@@ -44,10 +44,10 @@ namespace FrameworkHW2_SwagLabs.Tests
         [Test, Description("add prodcut from selected product page")]
         public void TC02_Add_Product()
         {
-            spp = new SelectedProductPage(driver);
+            spp = new SelectedProductPage(Driver);
             int numOfProductsInCartBeforeAdd = spp.GetNumOfProductsDisplay();
             spp.AddProduct();
-            spp = new SelectedProductPage(driver);
+            spp = new SelectedProductPage(Driver);
             Assert.AreEqual(ButtonState.REMOVE, spp.GetButtonSate(), "Button did not toggle to 'Remove' after clicking on 'Add'");
             Assert.AreEqual(numOfProductsInCartBeforeAdd + 1, spp.GetNumOfProductsDisplay(), "num of products display has not increased after adding a product from " +
                 "the product page itself");
@@ -56,10 +56,10 @@ namespace FrameworkHW2_SwagLabs.Tests
         [Test, Description("check product button state in 'Products' page")]
         public void TC03_Check_AddRmvBtn_In_Products_Page()
         {
-            spp = new SelectedProductPage(driver);
+            spp = new SelectedProductPage(Driver);
             SelectedProd.buttonState = spp.GetButtonSate();
             spp.MoveBackToProductsPage();
-            pp = new ProductsPage(driver);
+            pp = new ProductsPage(Driver);
             Assert.That(pp.IsPageDisplayed(pp.ProductsLabelEl), "'PRODUCTS' page is not displayed after clicking on 'BACK TO PRODUCTS' button in the selected " +
                 "product page");
             //Assert.AreEqual(ButtonState.REMOVE, SelectedProd.buttonState, "selected product is still displayed with 'ADD TO CART'");

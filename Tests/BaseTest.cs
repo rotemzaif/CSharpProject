@@ -21,7 +21,7 @@ namespace FrameworkHW2_SwagLabs.Tests
 {
     class BaseTest
     {
-        public IWebDriver driver { get; set; }
+        public IWebDriver Driver { get; set; }
 
         [OneTimeSetUp]
         public void Setup()
@@ -33,32 +33,37 @@ namespace FrameworkHW2_SwagLabs.Tests
             {
                 case "chrome":
                     new DriverManager().SetUpDriver(new ChromeConfig());
-                    driver = new ChromeDriver();
+                    Driver = new ChromeDriver();
                     break;
                 case "edge":
                     new DriverManager().SetUpDriver(new EdgeConfig());
-                    driver = new EdgeDriver();
+                    Driver = new EdgeDriver();
                     break;
                 case "firefox":
                     new DriverManager().SetUpDriver(new FirefoxConfig());
-                    driver = new FirefoxDriver();
+                    Driver = new FirefoxDriver();
                     break;
                 default:
                     throw new NotSupportedException($"No such browser {browserName}");
             }            
-            driver.Manage().Window.Maximize();
-            driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(30);
-            driver.Navigate().GoToUrl(Utils.appConfig["baseUrl"]);
+            Driver.Manage().Window.Maximize();
+            Driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(30);
+            Driver.Navigate().GoToUrl(Utils.appConfig["baseUrl"]);
+        }
+
+        [TearDown]
+        public void TakeScreenShotOnFailure()
+        {
+            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
+            {
+                AllureLifecycle.Instance.AddAttachment("Full page screenshot", MediaTypeNames.Image.Jpeg, ((ITakesScreenshot)Driver).GetScreenshot().AsByteArray);
+            }
         }
 
         [OneTimeTearDown]
         public void Teardown()
-        {
-            if (TestContext.CurrentContext.Result.Outcome != ResultState.Success)
-            {
-                AllureLifecycle.Instance.AddAttachment("Full page screenshot", MediaTypeNames.Image.Jpeg, ((ITakesScreenshot)driver).GetScreenshot().AsByteArray);
-            }
-            driver.Quit();
+        {            
+            Driver.Quit();
         }
     }
 }
