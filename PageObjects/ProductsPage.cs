@@ -13,7 +13,9 @@ namespace FrameworkHW2_SwagLabs.PageObjects
     {
         // page properties
         public IWebElement ProductsLabelEl => driver.FindElement(By.CssSelector(Utils.pageElements["ProductsPage:elements_css:ProductsLabelEl"]));
+
         public IList<IWebElement> ProductsNameElList => driver.FindElements(By.CssSelector(Utils.pageElements["ProductsPage:elements_css:ProductsNameElList"]));
+        public IList<IWebElement> ProductsImgLinkList => driver.FindElements(By.CssSelector(Utils.pageElements["ProductsPage:elements_css:ProductsImgLinkList"]));
         public IList<IWebElement> ProductsDescriptionElList => driver.FindElements(By.CssSelector(Utils.pageElements["ProductsPage:elements_css:ProductsDescriptionElList"]));
         public IList<IWebElement> ProductsPriceElList => driver.FindElements(By.CssSelector(Utils.pageElements["ProductsPage:elements_css:ProductsPriceElList"]));
         public IList<IWebElement> ProductsAddRemoveBtnList => driver.FindElements(By.CssSelector(Utils.pageElements["ProductsPage:elements_css:ProductsAddRemoveBtnList"]));
@@ -67,6 +69,14 @@ namespace FrameworkHW2_SwagLabs.PageObjects
             return state;
         }
 
+        [AllureStep("Getting product ID from DOM for product {0}")]
+        public string GetProductDomID(string productName)
+        {
+            IWebElement prodImgLink = ProductsDict[productName][4];
+            string prodImgLinkText = GetElementText(prodImgLink);
+            return prodImgLinkText.Split('_')[1];
+        }
+
         [AllureStep("Getting Product object based on products element list at index {0}")]
         public Product GetProuct(int index)
         {
@@ -85,7 +95,7 @@ namespace FrameworkHW2_SwagLabs.PageObjects
             string prodId;
             if (ProductsDict == null)
                 ProductsDict = new Dictionary<string, List<IWebElement>>();
-            IWebElement prodName,prodDesc, prodPrice, prodAddRmvBtn;
+            IWebElement prodName,prodDesc, prodPrice, prodAddRmvBtn, prodImgLinkName;
             for(int i = 0; i < ProductsNameElList.Count; i++)
             {
                 prodId = GetElementText(ProductsNameElList[i]);
@@ -93,7 +103,8 @@ namespace FrameworkHW2_SwagLabs.PageObjects
                 prodDesc = ProductsDescriptionElList[i];
                 prodPrice = ProductsPriceElList[i];
                 prodAddRmvBtn = ProductsAddRemoveBtnList[i];
-                List<IWebElement> prodAtt = new List<IWebElement>() { prodName, prodDesc, prodPrice, prodAddRmvBtn };
+                prodImgLinkName = ProductsImgLinkList[i];
+                List<IWebElement> prodAtt = new List<IWebElement>() { prodName, prodDesc, prodPrice, prodAddRmvBtn, prodImgLinkName };
                 ProductsDict.Add(prodId, prodAtt);
             }
         }
