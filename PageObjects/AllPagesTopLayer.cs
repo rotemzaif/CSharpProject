@@ -1,4 +1,5 @@
 ﻿using FrameworkHW2_SwagLabs.Tools;
+using NUnit.Allure.Attributes;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -22,12 +23,15 @@ namespace FrameworkHW2_SwagLabs.PageObjects
 
 
         // action methods
+        [AllureStep("opening the options menu")]
         public void OpenOptionsMenu()
         {
             Click(OptionsMenuBtn);
             WaitForElementToBeVisible(Utils.pageElements["AllPagesTopLayer:elements_css:LogoutOption"]);
             //WaitForElementToBeVisible(".bm-menu-wrap");
         }
+
+        [AllureStep("selecting option {0} from the menu list")]
         public void SelectAction(MenuOption optionIn)
         {
             string optionStr = "";
@@ -57,6 +61,8 @@ namespace FrameworkHW2_SwagLabs.PageObjects
         }
 
         // getter methods
+
+        [AllureStep("extracting the number displayed inside the products cart")]
         public int GetNumOfProductsDisplay()
         {
             string ShopingCartNumElCssSelector = Utils.pageElements["AllPagesTopLayer:elements_css:ShopingCartNumEl"];
