@@ -30,12 +30,12 @@ namespace FrameworkHW2_SwagLabs.Tests
         [AllureFeature("login")]
         public void TC01_Login_With_Valid_Credentials()
         {
-            lp = new LoginPage(Driver);
+            lp = new(Driver);
             lp.Login("standard_user", "secret_sauceee");
-            //lp.Login("standard_user", "secret_sauce");           
-            //pp = new ProductsPage(driver);
+            //lp.Login("standard_user", "secret_sauce");                       
+            Assert.That(!lp.IsPageDisplayed(lp.ErrMsgLabel), "Login Failed with entered credentials!! Check user-name and password entered");
             pp = new(Driver);
-            Assert.That(pp.IsPageDisplayed(pp.ProductsLabelEl), "Login Failed with entered credentials");
+            Assert.That(pp.IsPageDisplayed(pp.ProductsLabelEl), "Products page is not displayed");
             
 
         }
