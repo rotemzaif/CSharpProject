@@ -49,6 +49,8 @@ namespace FrameworkHW2_SwagLabs.Tests
             Driver.Manage().Window.Maximize();
             Driver.Manage().Timeouts().PageLoad = TimeSpan.FromSeconds(30);
             Driver.Navigate().GoToUrl(Utils.appConfig["baseUrl"]);
+            string ExpectedUrl = Utils.pageElements["loginPage:LoginPageURL"];
+            Assert.That(Driver.Url, Is.EqualTo(ExpectedUrl), "did not get to the expected url");  
         }
 
         [TearDown]
