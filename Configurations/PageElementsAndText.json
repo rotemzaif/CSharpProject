@@ -8,7 +8,7 @@
       "ErrMsgLabel": "[data-test='error']"
     },
     "labels_text": {
-      "invalid_credentials_err_msg": "Epic sadface: Username and password do not match any user in this service aaa"
+      "invalid_credentials_err_msg": "Epic sadface: Username and password do not match any user in this service"
     }
   },
   "AllPagesTopLayer": {

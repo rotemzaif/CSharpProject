@@ -1,0 +1,158 @@
+{
+  "uuid": "88c92480-58a2-467c-bddc-cbc095450d01-tr-0-1010",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Check_Product_Details"
+    },
+    {
+      "name": "testClass",
+      "value": "SelectedProductPageTest"
+    },
+    {
+      "name": "epic",
+      "value": "Selected Product Page"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Check_Product_Details",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC01_Check_Product_Details"
+  },
+  "stage": "finished",
+  "description": "move to selected product page and verify product details match the selected product details\n",
+  "steps": [
+    {
+      "name": "TC01_Check_Product_Details",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650887669769,
+          "stop": 1650887670036
+        },
+        {
+          "name": "Getting Product object based on products element list at index 1",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "1"
+            }
+          ],
+          "start": 1650887670438,
+          "stop": 1650887670451
+        },
+        {
+          "name": "Getting product ID from DOM for product 1",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "1"
+            }
+          ],
+          "start": 1650887670475,
+          "stop": 1650887670490
+        },
+        {
+          "name": "Clicking on product page link: Sauce Labs Bike Light",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Sauce Labs Bike Light"
+            }
+          ],
+          "start": 1650887670495,
+          "stop": 1650887670543
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "81cd186b74e0479f849a2adbedcaec76-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650887669743,
+      "stop": 1650887670550
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650887669743,
+  "stop": 1650887670552
+}

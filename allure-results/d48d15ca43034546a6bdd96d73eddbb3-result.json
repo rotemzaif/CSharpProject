@@ -1,0 +1,93 @@
+{
+  "uuid": "207b0460-5ece-43d8-a0f0-5b6b1a353a29-tr-0-1004",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC04_check_error_message",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC04_check_error_message",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC04_check_error_message"
+    },
+    {
+      "name": "testClass",
+      "value": "LoginTest"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "feature",
+      "value": "login"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "TC04_check_error_message",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC04_check_error_message"
+  },
+  "stage": "finished",
+  "description": "check error message content\n",
+  "steps": [
+    {
+      "name": "TC04_check_error_message",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Getting error message in case of invalid credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891509454,
+          "stop": 1650891509465
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "d7939bb426f44508bc73b97ba19c54cc-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650891509443,
+      "stop": 1650891509465
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650891509443,
+  "stop": 1650891509465
+}

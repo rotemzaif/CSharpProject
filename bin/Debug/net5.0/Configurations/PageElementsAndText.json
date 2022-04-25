@@ -1,5 +1,6 @@
 {
   "loginPage": {
+    "LoginPageURL": "https://www.saucedemo.com/",
     "elements_css": {
       "user_name": "#user-name",
       "pswd": "#password",
@@ -7,7 +8,7 @@
       "ErrMsgLabel": "[data-test='error']"
     },
     "labels_text": {
-      "invalid_credentials_err_msg": "Epic sadface: Username and password do not match any user in this service aaa"
+      "invalid_credentials_err_msg": "Epic sadface: Username and password do not match any user in this service"
     }
   },
   "AllPagesTopLayer": {
@@ -21,8 +22,10 @@
     }
   },
   "ProductsPage": {
+    "ProductsPageURL": "https://www.saucedemo.com/inventory.html",
     "elements_css": {
       "ProductsLabelEl": ".title",
+      "ProductsImgLinkList": ".inventory_list > .inventory_item > .inventory_item_img > a",
       "ProductsNameElList": ".inventory_item_name",
       "ProductsDescriptionElList": ".inventory_item_desc",
       "ProductsPriceElList": ".inventory_item_price",
@@ -30,6 +33,7 @@
     }
   },
   "SelectedProductPage": {
+    "SelectedPageURL": "https://www.saucedemo.com/inventory-item.html?id=",
     "elements_css": {
       "BackBtn": "#back-to-products",
       "ProdName": ".inventory_details_name",

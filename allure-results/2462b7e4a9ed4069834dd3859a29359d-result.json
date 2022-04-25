@@ -1,0 +1,158 @@
+{
+  "uuid": "065ebe05-8f01-4a27-a5be-6c6423f22a14-tr-0-1010",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Check_Product_Details"
+    },
+    {
+      "name": "testClass",
+      "value": "SelectedProductPageTest"
+    },
+    {
+      "name": "epic",
+      "value": "Selected Product Page"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Check_Product_Details",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC01_Check_Product_Details"
+  },
+  "stage": "finished",
+  "description": "move to selected product page and verify product details match the selected product details\n",
+  "steps": [
+    {
+      "name": "TC01_Check_Product_Details",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650888241967,
+          "stop": 1650888242213
+        },
+        {
+          "name": "Getting Product object based on products element list at index 5",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "5"
+            }
+          ],
+          "start": 1650888242559,
+          "stop": 1650888242575
+        },
+        {
+          "name": "Getting product ID from DOM for product 5",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "5"
+            }
+          ],
+          "start": 1650888242607,
+          "stop": 1650888242616
+        },
+        {
+          "name": "Clicking on product page link: Test.allTheThings() T-Shirt (Red)",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Test.allTheThings() T-Shirt (Red)"
+            }
+          ],
+          "start": 1650888242624,
+          "stop": 1650888242678
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "e44506666b93454e8efc49dcd59931fb-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650888241942,
+      "stop": 1650888242688
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650888241941,
+  "stop": 1650888242690
+}

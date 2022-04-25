@@ -1,0 +1,102 @@
+{
+  "uuid": "425bc795-a3f4-4ccd-aa8b-6156ac190f93-tr-0-1001",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC01_Login_With_Valid_Credentials",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC01_Login_With_Valid_Credentials",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Login_With_Valid_Credentials"
+    },
+    {
+      "name": "testClass",
+      "value": "LoginTest"
+    },
+    {
+      "name": "severity",
+      "value": "blocker"
+    },
+    {
+      "name": "feature",
+      "value": "login"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Login_With_Valid_Credentials",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC01_Login_With_Valid_Credentials"
+  },
+  "stage": "finished",
+  "description": "login to the app with valid credentials\n",
+  "steps": [
+    {
+      "name": "TC01_Login_With_Valid_Credentials",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650877097397,
+          "stop": 1650877097661
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "a8aaa29c060e4d24b2b82d3a64c9337a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650877097371,
+      "stop": 1650877097672
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650877097371,
+  "stop": 1650877097675
+}

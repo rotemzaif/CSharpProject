@@ -1,0 +1,169 @@
+{
+  "uuid": "d93ae51c-361d-4cc9-869a-e903f8e58b0b-tr-0-1007",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.tc02_Remove_Product_From_Cart",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.tc02_Remove_Product_From_Cart",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "tc02_Remove_Product_From_Cart"
+    },
+    {
+      "name": "testClass",
+      "value": "ProductsPageTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "feature",
+      "value": "Remove Product"
+    },
+    {
+      "name": "epic",
+      "value": "Products Page"
+    }
+  ],
+  "links": [],
+  "name": "tc02_Remove_Product_From_Cart",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "tc02_Remove_Product_From_Cart"
+  },
+  "stage": "finished",
+  "description": "remove a product from the cart\n",
+  "steps": [
+    {
+      "name": "tc02_Remove_Product_From_Cart",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891454269,
+          "stop": 1650891454288
+        },
+        {
+          "name": "Removing product: Test.allTheThings() T-Shirt (Red)",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Getting product Add/Remove button Element (id = f9f54f2a-5864-4f69-ba95-5833fc6cb0b1) state in Products page",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = f9f54f2a-5864-4f69-ba95-5833fc6cb0b1)"
+                }
+              ],
+              "start": 1650891454288,
+              "stop": 1650891454303
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Test.allTheThings() T-Shirt (Red)"
+            }
+          ],
+          "start": 1650891454288,
+          "stop": 1650891454361
+        },
+        {
+          "name": "Getting product Add/Remove button Element (id = f22c6f94-e094-4328-b78e-6f423d164eb3) state in Products page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "WebElement",
+              "value": "Element (id = f22c6f94-e094-4328-b78e-6f423d164eb3)"
+            }
+          ],
+          "start": 1650891454569,
+          "stop": 1650891454576
+        },
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891454576,
+          "stop": 1650891454581
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "e2d84b9f321b46f0bbac5ab00e13ed73-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650891454031,
+      "stop": 1650891454581
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650891454031,
+  "stop": 1650891454581
+}

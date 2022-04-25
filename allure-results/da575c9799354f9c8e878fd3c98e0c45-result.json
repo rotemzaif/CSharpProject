@@ -1,0 +1,150 @@
+{
+  "uuid": "8819575f-7190-4400-bc6e-b1bd4a0ce89e-tr-0-1011",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC02_Add_Product",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC02_Add_Product",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC02_Add_Product"
+    },
+    {
+      "name": "testClass",
+      "value": "SelectedProductPageTest"
+    },
+    {
+      "name": "epic",
+      "value": "Selected Product Page"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "TC02_Add_Product",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC02_Add_Product"
+  },
+  "stage": "finished",
+  "description": "add prodcut from selected product page\n",
+  "steps": [
+    {
+      "name": "TC02_Add_Product",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650876504264,
+          "stop": 1650876504287
+        },
+        {
+          "name": "Adding the product from the product page itself",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Getting product Add/Remove button state displayed in the selected Product page",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [],
+              "start": 1650876504288,
+              "stop": 1650876504318
+            }
+          ],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650876504288,
+          "stop": 1650876504400
+        },
+        {
+          "name": "Getting product Add/Remove button state displayed in the selected Product page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650876504401,
+          "stop": 1650876504437
+        },
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650876504445,
+          "stop": 1650876504488
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9c29521a2f914013aa232d0531218888-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650876504264,
+      "stop": 1650876504499
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650876504264,
+  "stop": 1650876504501
+}

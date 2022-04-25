@@ -32,8 +32,7 @@ namespace FrameworkHW2_SwagLabs.Tests
         public void TC01_Login_With_Valid_Credentials()
         {
             lp = new(Driver);
-            lp.Login("standard_user", "secret_sauce");
-            Assert.That(!lp.IsErrMsgDisplayed(), "Login Failed with entered credentials!! Check user-name and password entered");            
+            lp.Login("standard_user", "secret_sauce");            
             ExpectedUrl = Utils.pageElements["ProductsPage:ProductsPageURL"];
             Assert.That(Driver.Url, Is.EqualTo(ExpectedUrl),"Products page is not displayed");           
         }

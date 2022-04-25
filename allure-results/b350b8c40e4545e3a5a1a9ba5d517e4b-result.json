@@ -1,0 +1,113 @@
+{
+  "uuid": "f1669010-6661-4358-adab-8c0c51da5750-tr-0-1002",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC02_Logout",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC02_Logout",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC02_Logout"
+    },
+    {
+      "name": "testClass",
+      "value": "LoginTest"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "feature",
+      "value": "logout"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "TC02_Logout",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC02_Logout"
+  },
+  "stage": "finished",
+  "description": "ordered logout from the app - via logout button\n",
+  "steps": [
+    {
+      "name": "TC02_Logout",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "opening the options menu",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891508583,
+          "stop": 1650891509162
+        },
+        {
+          "name": "selecting option LOGOUT from the menu list",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "MenuOption",
+              "value": "LOGOUT"
+            }
+          ],
+          "start": 1650891509162,
+          "stop": 1650891509224
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "21d8a81c1d024918a5a46ad10485b551-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650891508258,
+      "stop": 1650891509228
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650891508258,
+  "stop": 1650891509229
+}

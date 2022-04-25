@@ -1,0 +1,108 @@
+{
+  "uuid": "724c96c8-0fc9-4a5c-80a1-59ec34fe64d5-tr-0-1008",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC03_Move_To_Product_Page",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC03_Move_To_Product_Page",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC03_Move_To_Product_Page"
+    },
+    {
+      "name": "testClass",
+      "value": "ProductsPageTest"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "feature",
+      "value": "View Product"
+    },
+    {
+      "name": "epic",
+      "value": "Products Page"
+    }
+  ],
+  "links": [],
+  "name": "TC03_Move_To_Product_Page",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Collections.Generic.KeyNotFoundException : The given key '' was not present in the dictionary.",
+    "trace": "   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.__a$_around_GoToProductPage_100663384_o(String productName) in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\ProductsPage.cs:line 54\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.__a$_around_GoToProductPage_100663384_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.__a$_around_GoToProductPage_100663384_w_0(Object[] )\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.GoToProductPage(String productName)\r\n   at FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC03_Move_To_Product_Page() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\ProductsPageTest.cs:line 74"
+  },
+  "stage": "finished",
+  "description": "move to 'Products' page from selected product page\n",
+  "steps": [
+    {
+      "name": "TC03_Move_To_Product_Page",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Collections.Generic.KeyNotFoundException : The given key '' was not present in the dictionary.",
+        "trace": "   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.__a$_around_GoToProductPage_100663384_o(String productName) in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\ProductsPage.cs:line 54\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.__a$_around_GoToProductPage_100663384_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.__a$_around_GoToProductPage_100663384_w_0(Object[] )\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.GoToProductPage(String productName)\r\n   at FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC03_Move_To_Product_Page() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\ProductsPageTest.cs:line 74"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Clicking on product page link: ",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "The given key '' was not present in the dictionary.",
+            "trace": "   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.__a$_around_GoToProductPage_100663384_o(String productName) in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\ProductsPage.cs:line 54\r\n   at FrameworkHW2_SwagLabs.PageObjects.ProductsPage.__a$_around_GoToProductPage_100663384_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": ""
+            }
+          ],
+          "start": 1650876506081,
+          "stop": 1650876506082
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Full page screenshot",
+          "source": "e033c0de961944cfa1a28f2049f5ee20-attachment",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "d3d0950255254300bb99c41a0df0c227-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650876505902,
+      "stop": 1650876506310
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650876505902,
+  "stop": 1650876506310
+}

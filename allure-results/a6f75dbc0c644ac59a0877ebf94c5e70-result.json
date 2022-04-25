@@ -1,0 +1,192 @@
+{
+  "uuid": "d4740924-ba60-418e-bee6-df0019234d4c-tr-0-1006",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC01_Add_Products_To_Cart",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC01_Add_Products_To_Cart",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Add_Products_To_Cart"
+    },
+    {
+      "name": "testClass",
+      "value": "ProductsPageTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "feature",
+      "value": "Add Product"
+    },
+    {
+      "name": "epic",
+      "value": "Products Page"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Add_Products_To_Cart",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC01_Add_Products_To_Cart"
+  },
+  "stage": "finished",
+  "description": "add a product to cart and check \n",
+  "steps": [
+    {
+      "name": "TC01_Add_Products_To_Cart",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650875131557,
+          "stop": 1650875131851
+        },
+        {
+          "name": "Getting Product object based on products element list at index 1",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "1"
+            }
+          ],
+          "start": 1650875132207,
+          "stop": 1650875132229
+        },
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650875132258,
+          "stop": 1650875132266
+        },
+        {
+          "name": "Adding product: Product[ \nname: Sauce Labs Bike Light\ndescription: A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.\nprice: $9.99\nbutton state: ADD",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Product",
+              "value": "Product[ \nname: Sauce Labs Bike Light\ndescription: A red light isn't the desired state in testing but it sure helps when riding your bike at night. Water-resistant with 3 lighting modes, 1 AAA battery included.\nprice: $9.99\nbutton state: ADD"
+            }
+          ],
+          "start": 1650875132306,
+          "stop": 1650875132343
+        },
+        {
+          "name": "Getting product Add/Remove button Element (id = a1112a82-effe-40c3-bc59-0761e46fa611) state in Products page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "WebElement",
+              "value": "Element (id = a1112a82-effe-40c3-bc59-0761e46fa611)"
+            }
+          ],
+          "start": 1650875132527,
+          "stop": 1650875132539
+        },
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650875132543,
+          "stop": 1650875132566
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "9a3ec4c59ba74d159c50a541b812ec18-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650875131528,
+      "stop": 1650875132572
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650875131527,
+  "stop": 1650875132575
+}

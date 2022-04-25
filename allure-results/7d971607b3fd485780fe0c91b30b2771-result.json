@@ -1,0 +1,146 @@
+{
+  "uuid": "a92a7089-a43b-427a-9a0f-21df27a9f453-tr-0-1010",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Check_Product_Details"
+    },
+    {
+      "name": "testClass",
+      "value": "SelectedProductPageTest"
+    },
+    {
+      "name": "epic",
+      "value": "Selected Product Page"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Check_Product_Details",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=100.0.4896.88)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.get_Text()\r\n   at FrameworkHW2_SwagLabs.PageObjects.Product.GetProductName() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\Product.cs:line 31\r\n   at FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\SelectedProductPageTest.cs:line 41"
+  },
+  "stage": "finished",
+  "description": "move to selected product page and verify product details match the selected product details\n",
+  "steps": [
+    {
+      "name": "TC01_Check_Product_Details",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=100.0.4896.88)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.get_Text()\r\n   at FrameworkHW2_SwagLabs.PageObjects.Product.GetProductName() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\Product.cs:line 31\r\n   at FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\SelectedProductPageTest.cs:line 41"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650876502733,
+          "stop": 1650876503269
+        },
+        {
+          "name": "Getting Product object based on products element list at index 3",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "3"
+            }
+          ],
+          "start": 1650876503863,
+          "stop": 1650876503894
+        },
+        {
+          "name": "Clicking on product page link: Sauce Labs Fleece Jacket",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Sauce Labs Fleece Jacket"
+            }
+          ],
+          "start": 1650876503936,
+          "stop": 1650876503999
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Full page screenshot",
+          "source": "22e3404b7d964e0e9ffee705e6573f8f-attachment",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "b87f9b7df98448bcb6375f2d279e86c7-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650876502698,
+      "stop": 1650876504261
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650876502698,
+  "stop": 1650876504261
+}

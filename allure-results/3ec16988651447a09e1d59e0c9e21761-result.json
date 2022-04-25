@@ -1,0 +1,158 @@
+{
+  "uuid": "37f97b62-ad1d-464c-89c3-afa7733fcfb6-tr-0-1010",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Check_Product_Details"
+    },
+    {
+      "name": "testClass",
+      "value": "SelectedProductPageTest"
+    },
+    {
+      "name": "epic",
+      "value": "Selected Product Page"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Check_Product_Details",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC01_Check_Product_Details"
+  },
+  "stage": "finished",
+  "description": "move to selected product page and verify product details match the selected product details\n",
+  "steps": [
+    {
+      "name": "TC01_Check_Product_Details",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650887794518,
+          "stop": 1650887794788
+        },
+        {
+          "name": "Getting Product object based on products element list at index 2",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "2"
+            }
+          ],
+          "start": 1650887795132,
+          "stop": 1650887795146
+        },
+        {
+          "name": "Getting product ID from DOM for product 2",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "2"
+            }
+          ],
+          "start": 1650887795203,
+          "stop": 1650887795215
+        },
+        {
+          "name": "Clicking on product page link: Sauce Labs Bolt T-Shirt",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Sauce Labs Bolt T-Shirt"
+            }
+          ],
+          "start": 1650887795220,
+          "stop": 1650887795276
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "3ac1e835f52a49eeb690d286a7b8bd48-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650887794490,
+      "stop": 1650887795284
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650887794489,
+  "stop": 1650887795290
+}

@@ -1,0 +1,61 @@
+{
+  "uuid": "95d837d5-6fd0-4a63-8020-b5de14c2f984-tc-0-1005",
+  "name": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.tc02_Remove_Product_From_Cart",
+  "children": [
+    "95539377-1e8f-4c38-a314-83d99e2461fa-tr-0-1007"
+  ],
+  "befores": [
+    {
+      "name": "Setup",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1650876505900,
+      "stop": 1650876505900
+    }
+  ],
+  "afters": [
+    {
+      "name": "TakeScreenShotOnFailure",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1650876505900,
+      "stop": 1650876505900
+    },
+    {
+      "name": "Teardown",
+      "status": "none",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "It's not possible to get status of OneTimeTearDown",
+        "trace": "See Allure.NUnit wiki"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [],
+      "parameters": [],
+      "start": 1650876505900,
+      "stop": 1650876505900
+    }
+  ],
+  "links": [],
+  "start": 1650876504772,
+  "stop": 1650876505901
+}

@@ -1,0 +1,127 @@
+{
+  "uuid": "174a618d-77df-4a5a-bfc3-ca524f3b968e-tr-0-1001",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC01_Login_With_Valid_Credentials",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC01_Login_With_Valid_Credentials",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Login_With_Valid_Credentials"
+    },
+    {
+      "name": "testClass",
+      "value": "LoginTest"
+    },
+    {
+      "name": "severity",
+      "value": "blocker"
+    },
+    {
+      "name": "feature",
+      "value": "login"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Login_With_Valid_Credentials",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[data-test='error']\"}\n  (Session info: chrome=100.0.4896.88)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.get_ErrMsgLabel() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\LoginPage.cs:line 18\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.__a$_around_IsErrMsgDisplayed_100663358_o() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\LoginPage.cs:line 40\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.__a$_around_IsErrMsgDisplayed_100663358_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.__a$_around_IsErrMsgDisplayed_100663358_w_0(Object[] )\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.IsErrMsgDisplayed()\r\n   at FrameworkHW2_SwagLabs.Tests.LoginTest.TC01_Login_With_Valid_Credentials() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\LoginTest.cs:line 36"
+  },
+  "stage": "finished",
+  "description": "login to the app with valid credentials\n",
+  "steps": [
+    {
+      "name": "TC01_Login_With_Valid_Credentials",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.NoSuchElementException : no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[data-test='error']\"}\n  (Session info: chrome=100.0.4896.88)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.get_ErrMsgLabel() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\LoginPage.cs:line 18\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.__a$_around_IsErrMsgDisplayed_100663358_o() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\LoginPage.cs:line 40\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.__a$_around_IsErrMsgDisplayed_100663358_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.__a$_around_IsErrMsgDisplayed_100663358_w_0(Object[] )\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.IsErrMsgDisplayed()\r\n   at FrameworkHW2_SwagLabs.Tests.LoginTest.TC01_Login_With_Valid_Credentials() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\LoginTest.cs:line 36"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650876502463,
+          "stop": 1650876502910
+        },
+        {
+          "name": "Checking if error message is displayed in case of invalid credentials",
+          "status": "failed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false,
+            "message": "no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"[data-test='error']\"}\n  (Session info: chrome=100.0.4896.88)",
+            "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.FindElement(String mechanism, String value)\r\n   at OpenQA.Selenium.By.<.ctor>b__11_0(ISearchContext context)\r\n   at OpenQA.Selenium.By.FindElement(ISearchContext context)\r\n   at OpenQA.Selenium.WebDriver.FindElement(By by)\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.get_ErrMsgLabel() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\LoginPage.cs:line 18\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.__a$_around_IsErrMsgDisplayed_100663358_o() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\LoginPage.cs:line 40\r\n   at FrameworkHW2_SwagLabs.PageObjects.LoginPage.__a$_around_IsErrMsgDisplayed_100663358_u(Object[] )\r\n   at NUnit.Allure.Core.Steps.AllureStepAspect.WrapStep(String name, MethodBase methodBase, Object[] arguments, Func`2 method)"
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650876502910,
+          "stop": 1650876503027
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Full page screenshot",
+          "source": "cf65306753dc4f54a11ba8b41f16c0bb-attachment",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "19ac09f4c30e4e51b5f76f72893cd345-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650876502433,
+      "stop": 1650876503411
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650876502433,
+  "stop": 1650876503418
+}

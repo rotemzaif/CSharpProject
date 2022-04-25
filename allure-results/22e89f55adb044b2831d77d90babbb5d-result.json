@@ -1,0 +1,173 @@
+{
+  "uuid": "9f4a01c6-de4c-4884-8a07-2d4853d25ea0-tr-0-1010",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Check_Product_Details"
+    },
+    {
+      "name": "testClass",
+      "value": "SelectedProductPageTest"
+    },
+    {
+      "name": "epic",
+      "value": "Selected Product Page"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Check_Product_Details",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC01_Check_Product_Details"
+  },
+  "stage": "finished",
+  "description": "move to selected product page and verify product details match the selected product details\n",
+  "steps": [
+    {
+      "name": "TC01_Check_Product_Details",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650891451595,
+          "stop": 1650891451958
+        },
+        {
+          "name": "Getting Product object based on products element list at index 0",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "0"
+            }
+          ],
+          "start": 1650891452831,
+          "stop": 1650891452967
+        },
+        {
+          "name": "Getting product ID from DOM for product 0",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "0"
+            }
+          ],
+          "start": 1650891452968,
+          "stop": 1650891452983
+        },
+        {
+          "name": "Clicking on product page link: Sauce Labs Backpack",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Sauce Labs Backpack"
+            }
+          ],
+          "start": 1650891452983,
+          "stop": 1650891453159
+        },
+        {
+          "name": "Getting product name displayed in the selected Product page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891453181,
+          "stop": 1650891453202
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "6f0dbb205fd647939a1a835b984acaf4-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650891451570,
+      "stop": 1650891453205
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650891451569,
+  "stop": 1650891453205
+}

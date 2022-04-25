@@ -1,0 +1,166 @@
+{
+  "uuid": "1e533692-54b0-47bb-8684-7010bde0f61e-tr-0-1010",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Check_Product_Details"
+    },
+    {
+      "name": "testClass",
+      "value": "SelectedProductPageTest"
+    },
+    {
+      "name": "epic",
+      "value": "Selected Product Page"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Check_Product_Details",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=100.0.4896.88)",
+    "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.get_Text()\r\n   at FrameworkHW2_SwagLabs.PageObjects.Product.GetProductName() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\Product.cs:line 31\r\n   at FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\SelectedProductPageTest.cs:line 41"
+  },
+  "stage": "finished",
+  "description": "move to selected product page and verify product details match the selected product details\n",
+  "steps": [
+    {
+      "name": "TC01_Check_Product_Details",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.StaleElementReferenceException : stale element reference: element is not attached to the page document\n  (Session info: chrome=100.0.4896.88)",
+        "trace": "   at OpenQA.Selenium.WebDriver.UnpackAndThrowOnError(Response errorResponse)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.InternalExecute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.Execute(String commandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebElement.get_Text()\r\n   at FrameworkHW2_SwagLabs.PageObjects.Product.GetProductName() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\PageObjects\\Product.cs:line 31\r\n   at FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC01_Check_Product_Details() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\SelectedProductPageTest.cs:line 41"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650885996439,
+          "stop": 1650885996714
+        },
+        {
+          "name": "Getting Product object based on products element list at index 5",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "5"
+            }
+          ],
+          "start": 1650885997199,
+          "stop": 1650885997218
+        },
+        {
+          "name": "Getting product ID from DOM for product 5",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "5"
+            }
+          ],
+          "start": 1650885997250,
+          "stop": 1650885997264
+        },
+        {
+          "name": "Clicking on product page link: Test.allTheThings() T-Shirt (Red)",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Test.allTheThings() T-Shirt (Red)"
+            }
+          ],
+          "start": 1650885997268,
+          "stop": 1650885997323
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Full page screenshot",
+          "source": "b15eb4d8d0cb402fba75a138eb61fe1d-attachment",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "b5bc6847530844e99c1e42d5e1a33654-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650885996411,
+      "stop": 1650885997610
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650885996410,
+  "stop": 1650885997612
+}

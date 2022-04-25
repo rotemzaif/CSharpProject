@@ -1,0 +1,117 @@
+{
+  "uuid": "d68a867c-a88d-48c4-84d4-f8ea2dd17910-tr-0-1003",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC03_Login_With_Invalid_Credentials",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC03_Login_With_Invalid_Credentials",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC03_Login_With_Invalid_Credentials"
+    },
+    {
+      "name": "testClass",
+      "value": "LoginTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "feature",
+      "value": "login"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "TC03_Login_With_Invalid_Credentials",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC03_Login_With_Invalid_Credentials"
+  },
+  "stage": "finished",
+  "description": "app login with invalid credentials and get an error message\n",
+  "steps": [
+    {
+      "name": "TC03_Login_With_Invalid_Credentials",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: rotem and pswd: 123456789",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "rotem"
+            },
+            {
+              "name": "String",
+              "value": "123456789"
+            }
+          ],
+          "start": 1650876504769,
+          "stop": 1650876505090
+        },
+        {
+          "name": "Checking if error message is displayed in case of invalid credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650876505090,
+          "stop": 1650876505141
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "33ffcab81e14433787f5a23940e3859a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650876504743,
+      "stop": 1650876505142
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650876504743,
+  "stop": 1650876505142
+}

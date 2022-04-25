@@ -1,0 +1,101 @@
+{
+  "uuid": "94acc929-80f4-422e-a963-60e15046c160-tr-0-1004",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC04_check_error_message",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.LoginTest.TC04_check_error_message",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#1"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC04_check_error_message"
+    },
+    {
+      "name": "testClass",
+      "value": "LoginTest"
+    },
+    {
+      "name": "severity",
+      "value": "minor"
+    },
+    {
+      "name": "feature",
+      "value": "login"
+    },
+    {
+      "name": "epic",
+      "value": "Login Page"
+    }
+  ],
+  "links": [],
+  "name": "TC04_check_error_message",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "  Expected string length 77 but was 73. Strings differ at index 73.\r\n  Expected: \"...ername and password do not match any user in this service aaa\"\r\n  But was:  \"...ername and password do not match any user in this service\"\r\n  -----------------------------------------------------------------------^\r\n",
+    "trace": "   at FrameworkHW2_SwagLabs.Tests.LoginTest.TC04_check_error_message() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\LoginTest.cs:line 72\r\n"
+  },
+  "stage": "finished",
+  "description": "check error message content\n",
+  "steps": [
+    {
+      "name": "TC04_check_error_message",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "  Expected string length 77 but was 73. Strings differ at index 73.\r\n  Expected: \"...ername and password do not match any user in this service aaa\"\r\n  But was:  \"...ername and password do not match any user in this service\"\r\n  -----------------------------------------------------------------------^\r\n",
+        "trace": "   at FrameworkHW2_SwagLabs.Tests.LoginTest.TC04_check_error_message() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\LoginTest.cs:line 72\r\n"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Getting error message in case of invalid credentials",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891453644,
+          "stop": 1650891453660
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Full page screenshot",
+          "source": "554d114c71184317ae2a0fb74aeb5737-attachment",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "921ee93b96c4408aa8b96d511c9cb4f6-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650891453631,
+      "stop": 1650891453897
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650891453631,
+  "stop": 1650891453897
+}

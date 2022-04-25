@@ -1,0 +1,142 @@
+{
+  "uuid": "95539377-1e8f-4c38-a314-83d99e2461fa-tr-0-1007",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.tc02_Remove_Product_From_Cart",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.tc02_Remove_Product_From_Cart",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "tc02_Remove_Product_From_Cart"
+    },
+    {
+      "name": "testClass",
+      "value": "ProductsPageTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "feature",
+      "value": "Remove Product"
+    },
+    {
+      "name": "epic",
+      "value": "Products Page"
+    }
+  ],
+  "links": [],
+  "name": "tc02_Remove_Product_From_Cart",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "System.Collections.Generic.KeyNotFoundException : The given key '' was not present in the dictionary.",
+    "trace": "   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)\r\n   at FrameworkHW2_SwagLabs.Tests.ProductsPageTest.tc02_Remove_Product_From_Cart() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\ProductsPageTest.cs:line 61"
+  },
+  "stage": "finished",
+  "description": "remove a product from the cart\n",
+  "steps": [
+    {
+      "name": "tc02_Remove_Product_From_Cart",
+      "status": "failed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "System.Collections.Generic.KeyNotFoundException : The given key '' was not present in the dictionary.",
+        "trace": "   at System.Collections.Generic.Dictionary`2.get_Item(TKey key)\r\n   at FrameworkHW2_SwagLabs.Tests.ProductsPageTest.tc02_Remove_Product_From_Cart() in C:\\Rotem_Work\\CSharp_Workspace\\FrameworkHW\\FrameworkHW2_SwagLabs\\Tests\\ProductsPageTest.cs:line 61"
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650876505241,
+          "stop": 1650876505269
+        },
+        {
+          "name": "Removing product: Test.allTheThings() T-Shirt (Red)",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [
+            {
+              "name": "Getting product Add/Remove button Element (id = 34977431-fdd9-4d2a-a832-618817f77baa) state in Products page",
+              "status": "passed",
+              "statusDetails": {
+                "known": false,
+                "muted": false,
+                "flaky": false
+              },
+              "stage": "finished",
+              "steps": [],
+              "attachments": [],
+              "parameters": [
+                {
+                  "name": "WebElement",
+                  "value": "Element (id = 34977431-fdd9-4d2a-a832-618817f77baa)"
+                }
+              ],
+              "start": 1650876505274,
+              "stop": 1650876505290
+            }
+          ],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Test.allTheThings() T-Shirt (Red)"
+            }
+          ],
+          "start": 1650876505274,
+          "stop": 1650876505355
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Full page screenshot",
+          "source": "46a4258202fd45ab997fb1b7651c0db0-attachment",
+          "type": "image/jpeg"
+        },
+        {
+          "name": "Console Output",
+          "source": "bcee9f9fabcd4ec89837d0aef1b826c3-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650876504772,
+      "stop": 1650876505900
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650876504772,
+  "stop": 1650876505900
+}

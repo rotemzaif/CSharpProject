@@ -1,0 +1,98 @@
+{
+  "uuid": "a97c5614-d818-4906-b59f-7ab148721f62-tr-0-1008",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC03_Move_To_Product_Page",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC03_Move_To_Product_Page",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC03_Move_To_Product_Page"
+    },
+    {
+      "name": "testClass",
+      "value": "ProductsPageTest"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    },
+    {
+      "name": "feature",
+      "value": "View Product"
+    },
+    {
+      "name": "epic",
+      "value": "Products Page"
+    }
+  ],
+  "links": [],
+  "name": "TC03_Move_To_Product_Page",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC03_Move_To_Product_Page"
+  },
+  "stage": "finished",
+  "description": "move to 'Products' page from selected product page\n",
+  "steps": [
+    {
+      "name": "TC03_Move_To_Product_Page",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Clicking on product page link: Test.allTheThings() T-Shirt (Red)",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "Test.allTheThings() T-Shirt (Red)"
+            }
+          ],
+          "start": 1650891454753,
+          "stop": 1650891454801
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "acb46697cc7e4f74bf98c07c0f49f472-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650891454582,
+      "stop": 1650891454824
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650891454582,
+  "stop": 1650891454824
+}

@@ -29,14 +29,12 @@ namespace FrameworkHW2_SwagLabs.PageObjects
         
         // page methods
         [AllureStep("Adding product: {0}")]
-        public void AddProduct(string productName)
-        {
-            IWebElement prodAddRmvBtn;
-            prodAddRmvBtn = ProductsDict[productName][3];
-            if(GetButtonSate(prodAddRmvBtn) == ButtonState.ADD) 
-                Click(prodAddRmvBtn);
+        public void AddProduct(Product selectedProduct, int index)
+        {            
+            if(selectedProduct.AddRemoveButtonState == ButtonState.ADD) 
+                Click(ProductsAddRemoveBtnList[index]);
             else
-                Console.WriteLine("product '" + productName + "' was added already");
+                Console.WriteLine("product '" + selectedProduct.ProductName + "' was added already");
         }
 
         [AllureStep("Removing product: {0}")]
@@ -70,20 +68,20 @@ namespace FrameworkHW2_SwagLabs.PageObjects
         }
 
         [AllureStep("Getting product ID from DOM for product {0}")]
-        public string GetProductDomID(string productName)
+        public string GetProductDomID(int index)
         {
-            IWebElement prodImgLink = ProductsDict[productName][4];
-            string prodImgLinkText = GetElementText(prodImgLink);
+            IWebElement prodImgLink = ProductsImgLinkList[index];
+            string prodImgLinkText = prodImgLink.GetAttribute("id");
             return prodImgLinkText.Split('_')[1];
         }
 
         [AllureStep("Getting Product object based on products element list at index {0}")]
-        public Product GetProuct(int index)
+        public Product GetProduct(int index)
         {
-            var prodName = GetElementText(ProductsNameElList[index]);
-            var prodDesc = GetElementText(ProductsDescriptionElList[index]);
-            var prodPrice = GetElementText(ProductsPriceElList[index]);
-            var prodBtnState = GetButtonSate(ProductsAddRemoveBtnList[index]);
+            var prodName = ProductsNameElList[index];
+            var prodDesc = ProductsDescriptionElList[index];
+            var prodPrice = ProductsPriceElList[index];
+            var prodBtnState = ProductsAddRemoveBtnList[index];
             return new Product(prodName, prodDesc, prodPrice, prodBtnState);
         }
 

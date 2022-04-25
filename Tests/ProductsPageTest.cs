@@ -15,8 +15,7 @@ namespace FrameworkHW2_SwagLabs.Tests
     [Parallelizable]
     class ProductsPageTest:BaseTest
     {
-        ProductsPage pp;
-        string prodName = "";
+        ProductsPage pp;        
         string ExpectedUrl;
         int SelectedProdIndex;
         Product SelectedProd;
@@ -34,18 +33,15 @@ namespace FrameworkHW2_SwagLabs.Tests
             // selecting randomly one of the products from the list
             Random rnd = new Random();
             SelectedProdIndex = rnd.Next(0, pp.ProductsNameElList.Count);
-            SelectedProd = pp.GetProuct(SelectedProdIndex);
+            SelectedProd = pp.GetProduct(SelectedProdIndex);
             Console.WriteLine(SelectedProd.ToString());
             Console.WriteLine("going to extract number of products in cart before adding a product");
             int numOfProductsInCartBeforeAdd = pp.GetNumOfProductsDisplay();
-            pp.AddProduct(prodName);
-            //prodName = "Sauce Labs Backpack";
-            //
-            //
-            //pp = new ProductsPage(Driver);
-            //IWebElement prodBtn = pp.ProductsDict[prodName][3];            
-            //Assert.AreEqual(ButtonState.REMOVE, pp.GetButtonSate(prodBtn),"Button did not toggle to 'Remove' after adding a product");
-            //Assert.AreEqual(pp.GetNumOfProductsDisplay(), numOfProductsInCartBeforeAdd + 1,"shoping cart products num display is not updated");
+            pp.AddProduct(SelectedProd, SelectedProdIndex);
+            pp = new (Driver);
+            IWebElement prodBtn = pp.ProductsDict[SelectedProd.ProductName][3];
+            Assert.AreEqual(ButtonState.REMOVE, pp.GetButtonSate(prodBtn), "Button did not toggle to 'Remove' after adding a product");
+            Assert.AreEqual(pp.GetNumOfProductsDisplay(), numOfProductsInCartBeforeAdd + 1, "shoping cart products num display is not updated");
         }
 
         [Test, Description("remove a product from the cart")]
@@ -53,15 +49,15 @@ namespace FrameworkHW2_SwagLabs.Tests
         [AllureFeature("Remove Product")]
         public void tc02_Remove_Product_From_Cart()
         {
-            pp = new ProductsPage(Driver);
+            pp = new (Driver);
             int numOfProductsInCartBeforeRemove = pp.GetNumOfProductsDisplay();
             if(numOfProductsInCartBeforeRemove == 0)
                 Console.WriteLine("no products were added!! Cannot remove any product");
             else
             {
-                pp.RemoveProduct(prodName);
-                pp = new ProductsPage(Driver);
-                IWebElement prodBtn = pp.ProductsDict[prodName][3];
+                pp.RemoveProduct(SelectedProd.ProductName);
+                pp = new (Driver);
+                IWebElement prodBtn = pp.ProductsDict[SelectedProd.ProductName][3];
                 Assert.AreEqual(ButtonState.ADD, pp.GetButtonSate(prodBtn), "Button did not toggle to 'ADD TO CART' after adding a product");
                 Assert.AreEqual(pp.GetNumOfProductsDisplay(), numOfProductsInCartBeforeRemove - 1, 
                     "shoping cart products num display is not updated");
@@ -74,7 +70,7 @@ namespace FrameworkHW2_SwagLabs.Tests
         public void TC03_Move_To_Product_Page()
         {
             pp = new ProductsPage(Driver);
-            pp.GoToProductPage(prodName);
+            pp.GoToProductPage(SelectedProd.ProductName);
             SelectedProductPage spp = new SelectedProductPage(Driver);
             Assert.That(spp.IsPageDisplayed(spp.BackBtn));
         }

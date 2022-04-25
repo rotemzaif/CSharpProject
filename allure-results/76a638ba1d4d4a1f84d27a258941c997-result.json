@@ -1,0 +1,196 @@
+{
+  "uuid": "67533773-9b54-40e4-80d9-aff4d1b847f2-tr-0-1006",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC01_Add_Products_To_Cart",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.ProductsPageTest.TC01_Add_Products_To_Cart",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#3"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC01_Add_Products_To_Cart"
+    },
+    {
+      "name": "testClass",
+      "value": "ProductsPageTest"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "feature",
+      "value": "Add Product"
+    },
+    {
+      "name": "epic",
+      "value": "Products Page"
+    }
+  ],
+  "links": [],
+  "name": "TC01_Add_Products_To_Cart",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC01_Add_Products_To_Cart"
+  },
+  "stage": "finished",
+  "description": "add a product to cart and check \n",
+  "steps": [
+    {
+      "name": "TC01_Add_Products_To_Cart",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Login with user: standard_user and pswd: secret_sauce",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "String",
+              "value": "standard_user"
+            },
+            {
+              "name": "String",
+              "value": "secret_sauce"
+            }
+          ],
+          "start": 1650891452148,
+          "stop": 1650891452863
+        },
+        {
+          "name": "Getting Product object based on products element list at index 5",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Int32",
+              "value": "5"
+            }
+          ],
+          "start": 1650891453415,
+          "stop": 1650891453495
+        },
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891453495,
+          "stop": 1650891453510
+        },
+        {
+          "name": "Adding product: Product[ \nname: Test.allTheThings() T-Shirt (Red)\ndescription: This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.\nprice: $15.99\nbutton state: ADD",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "Product",
+              "value": "Product[ \nname: Test.allTheThings() T-Shirt (Red)\ndescription: This classic Sauce Labs t-shirt is perfect to wear when cozying up to your keyboard to automate a few tests. Super-soft and comfy ringspun combed cotton.\nprice: $15.99\nbutton state: ADD"
+            },
+            {
+              "name": "Int32",
+              "value": "5"
+            }
+          ],
+          "start": 1650891453510,
+          "stop": 1650891453590
+        },
+        {
+          "name": "Getting product Add/Remove button Element (id = f9f54f2a-5864-4f69-ba95-5833fc6cb0b1) state in Products page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "WebElement",
+              "value": "Element (id = f9f54f2a-5864-4f69-ba95-5833fc6cb0b1)"
+            }
+          ],
+          "start": 1650891453955,
+          "stop": 1650891453977
+        },
+        {
+          "name": "extracting the number displayed inside the products cart",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891453977,
+          "stop": 1650891454024
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7fdfca22799f425f9d58b3ea9878387a-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650891452128,
+      "stop": 1650891454027
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650891452128,
+  "stop": 1650891454027
+}

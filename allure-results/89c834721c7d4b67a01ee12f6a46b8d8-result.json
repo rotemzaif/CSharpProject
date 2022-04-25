@@ -1,0 +1,109 @@
+{
+  "uuid": "af8128b1-eb0a-47a6-b0ea-5d7e475f7e14-tr-0-1012",
+  "historyId": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC03_Check_AddRmvBtn_In_Products_Page",
+  "fullName": "FrameworkHW2_SwagLabs.Tests.SelectedProductPageTest.TC03_Check_AddRmvBtn_In_Products_Page",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#2"
+    },
+    {
+      "name": "host",
+      "value": "ROTENZ-P14S"
+    },
+    {
+      "name": "package",
+      "value": "FrameworkHW2_SwagLabs.Tests"
+    },
+    {
+      "name": "testMethod",
+      "value": "TC03_Check_AddRmvBtn_In_Products_Page"
+    },
+    {
+      "name": "testClass",
+      "value": "SelectedProductPageTest"
+    },
+    {
+      "name": "epic",
+      "value": "Selected Product Page"
+    },
+    {
+      "name": "severity",
+      "value": "normal"
+    }
+  ],
+  "links": [],
+  "name": "TC03_Check_AddRmvBtn_In_Products_Page",
+  "status": "passed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "TC03_Check_AddRmvBtn_In_Products_Page"
+  },
+  "stage": "finished",
+  "description": "check product button state in 'Products' page\n",
+  "steps": [
+    {
+      "name": "TC03_Check_AddRmvBtn_In_Products_Page",
+      "status": "passed",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false
+      },
+      "stage": "finished",
+      "steps": [
+        {
+          "name": "Clicking on the 'BACK TO PRODUCTS' button from the selected product page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [],
+          "start": 1650891453365,
+          "stop": 1650891453451
+        },
+        {
+          "name": "Getting product Add/Remove button Element (id = c2ae7e72-be38-4bc7-a8f4-52b1cd0a4d19) state in Products page",
+          "status": "passed",
+          "statusDetails": {
+            "known": false,
+            "muted": false,
+            "flaky": false
+          },
+          "stage": "finished",
+          "steps": [],
+          "attachments": [],
+          "parameters": [
+            {
+              "name": "WebElement",
+              "value": "Element (id = c2ae7e72-be38-4bc7-a8f4-52b1cd0a4d19)"
+            }
+          ],
+          "start": 1650891453840,
+          "stop": 1650891453865
+        }
+      ],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "6a7449ada7ba4ac29cfde4e8ffa1b24e-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1650891453364,
+      "stop": 1650891453866
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1650891453364,
+  "stop": 1650891453866
+}
