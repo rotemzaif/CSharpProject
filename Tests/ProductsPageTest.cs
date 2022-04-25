@@ -6,9 +6,10 @@ using static FrameworkHW2_SwagLabs.BasePage;
 using NUnit.Allure.Core;
 using NUnit.Allure.Attributes;
 using Allure.Commons;
+using FrameworkHW2_SwagLabs.Tools;
 
 namespace FrameworkHW2_SwagLabs.Tests
-{
+{    
     [AllureNUnit]
     [AllureEpic("Products Page")]
     [Parallelizable]
@@ -16,6 +17,9 @@ namespace FrameworkHW2_SwagLabs.Tests
     {
         ProductsPage pp;
         string prodName = "";
+        string ExpectedUrl;
+        int SelectedProdIndex;
+        Product SelectedProd;
 
         [Test, Description("add a product to cart and check ")]
         [AllureSeverity(SeverityLevel.critical)]
@@ -24,14 +28,24 @@ namespace FrameworkHW2_SwagLabs.Tests
         {
             LoginPage lp = new LoginPage(Driver);
             lp.Login("standard_user", "secret_sauce");
-            pp = new ProductsPage(Driver);            
-            prodName = "Sauce Labs Backpack";
+            ExpectedUrl = Utils.pageElements["ProductsPage:ProductsPageURL"];
+            Assert.That(Driver.Url, Is.EqualTo(ExpectedUrl), "Products page is not displayed!! cannot proceed with tests");
+            pp = new(Driver);
+            // selecting randomly one of the products from the list
+            Random rnd = new Random();
+            SelectedProdIndex = rnd.Next(0, pp.ProductsNameElList.Count);
+            SelectedProd = pp.GetProuct(SelectedProdIndex);
+            Console.WriteLine(SelectedProd.ToString());
+            Console.WriteLine("going to extract number of products in cart before adding a product");
             int numOfProductsInCartBeforeAdd = pp.GetNumOfProductsDisplay();
             pp.AddProduct(prodName);
-            pp = new ProductsPage(Driver);
-            IWebElement prodBtn = pp.ProductsDict[prodName][3];            
-            Assert.AreEqual(ButtonState.REMOVE, pp.GetButtonSate(prodBtn),"Button did not toggle to 'Remove' after adding a product");
-            Assert.AreEqual(pp.GetNumOfProductsDisplay(), numOfProductsInCartBeforeAdd + 1,"shoping cart products num display is not updated");
+            //prodName = "Sauce Labs Backpack";
+            //
+            //
+            //pp = new ProductsPage(Driver);
+            //IWebElement prodBtn = pp.ProductsDict[prodName][3];            
+            //Assert.AreEqual(ButtonState.REMOVE, pp.GetButtonSate(prodBtn),"Button did not toggle to 'Remove' after adding a product");
+            //Assert.AreEqual(pp.GetNumOfProductsDisplay(), numOfProductsInCartBeforeAdd + 1,"shoping cart products num display is not updated");
         }
 
         [Test, Description("remove a product from the cart")]

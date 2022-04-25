@@ -32,13 +32,13 @@ namespace FrameworkHW2_SwagLabs.Tests
             SelectedProdIndex = rnd.Next(0, pp.ProductsNameElList.Count);
             SelectedProd = pp.GetProuct(SelectedProdIndex);
             Console.WriteLine(SelectedProd.ToString());
-            pp.GoToProductPage(SelectedProd.name);
+            pp.GoToProductPage(SelectedProd.Name);
             spp = new SelectedProductPage(Driver);
             Assert.That(pp.IsPageDisplayed(spp.BackBtn), "Did not reach the product page!!");
-            Assert.AreEqual(SelectedProd.name, spp.GetProductName(), "displayed product name doesn't match the selected product name");
-            Assert.AreEqual(SelectedProd.description, spp.GetProductDescription(), "displayed product description doesn't match the selected product description");
-            Assert.AreEqual(SelectedProd.price, spp.GetProductPrice(), "displayed product price doesn't match the selected product price");
-            Assert.AreEqual(SelectedProd.buttonState, spp.GetButtonSate(), "displayed product button label doesn't match the selected product button label");
+            Assert.AreEqual(SelectedProd.Name, spp.GetProductName(), "displayed product name doesn't match the selected product name");
+            Assert.AreEqual(SelectedProd.Description, spp.GetProductDescription(), "displayed product description doesn't match the selected product description");
+            Assert.AreEqual(SelectedProd.Price, spp.GetProductPrice(), "displayed product price doesn't match the selected product price");
+            Assert.AreEqual(SelectedProd.ButtonState, spp.GetButtonSate(), "displayed product button label doesn't match the selected product button label");
         }
 
         [Test, Description("add prodcut from selected product page")]
@@ -57,7 +57,7 @@ namespace FrameworkHW2_SwagLabs.Tests
         public void TC03_Check_AddRmvBtn_In_Products_Page()
         {
             spp = new SelectedProductPage(Driver);
-            SelectedProd.buttonState = spp.GetButtonSate();
+            SelectedProd.ButtonState = spp.GetButtonSate();
             spp.MoveBackToProductsPage();
             pp = new ProductsPage(Driver);
             Assert.That(pp.IsPageDisplayed(pp.ProductsLabelEl), "'PRODUCTS' page is not displayed after clicking on 'BACK TO PRODUCTS' button in the selected " +

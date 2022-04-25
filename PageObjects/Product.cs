@@ -10,27 +10,27 @@ namespace FrameworkHW2_SwagLabs.PageObjects
     class Product
     {
         // properties
-        public string name { get; set; }
-        public string description { get; set; }
-        public string price { get; set; }
-        public ButtonState buttonState { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Price { get; set; }
+        public ButtonState ButtonState { get; set; }
 
         // constructor
         public Product(string name, string description, string price, ButtonState buttonState)
         {
-            this.name = name;
-            this.description = description;
-            this.price = price;
-            this.buttonState = buttonState;
+            this.Name = name;
+            this.Description = description;
+            this.Price = price;
+            this.ButtonState = buttonState;
         }
 
         public override string ToString()
         {
             return "Product[ \n" +
-                "name: " + name + 
-                "\ndescription: " + description + 
-                "\nprice: " + price + 
-                "\nbutton state: " + buttonState; 
+                "name: " + Name + 
+                "\ndescription: " + Description + 
+                "\nprice: " + Price + 
+                "\nbutton state: " + ButtonState; 
         }
     }
 }
